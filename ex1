@@ -1,0 +1,59 @@
+class common
+{
+    static String University="Anna University";
+}
+class SIST
+{
+    static String college="SIST";
+    String dept;
+    int n;
+    public void set_dimension(String a,int b)
+    {
+        dept =a;
+        n=b;
+    }
+    public void display()
+    {
+    System.out.println("University:"+common.University);
+    System.out.println("college:"+college);
+    System.out.println("dept:"+dept);
+    System.out.println("no of students:"+n);
+    }
+}
+class HIT
+{
+    static String college="HIT";
+    String dept;
+    int n;
+    public void set_dimension(String a,int b)
+    {
+        dept=a;
+        n=b;
+    }
+    public void display()
+    {
+    System.out.println("University:"+common.University);
+    System.out.println("college:"+college);
+    System.out.println("dept:"+dept);
+    System.out.println("no of students:"+n);
+    }
+}
+
+class main
+{
+    public static void main(String args[])
+    {
+    SIST a1 =new SIST();
+    SIST a2= new SIST();
+    a1.set_dimension("CSE",120000);
+    a2.set_dimension("ECE",10000000);
+    a1.display();
+    a2.display();
+    HIT a3=new HIT();
+    HIT a4= new HIT();
+    a3.set_dimension("CSE",120000);
+    a4.set_dimension("ECE",2222222);
+    a3.display();
+    a4.display();
+}
+}
