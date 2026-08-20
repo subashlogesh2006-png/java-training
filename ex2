@@ -1,0 +1,65 @@
+class common
+{
+    static String PM="Narendra Modi";
+}
+class tn
+{
+    static String cm="vijay";
+    static String state="tamilnadu";
+    String district;
+    int n;
+    public void set_dimension(String a,int b)
+    {
+        district =a;
+        n=b;
+    }
+    public void display()
+    {
+    System.out.println("PM:"+common.PM);
+    System.out.println("CM:"+cm);
+    System.out.println("State:"+state);
+    System.out.println("District:"+district);
+    System.out.println("no of population:"+n);
+    }
+}
+class ap
+{
+    static String cm="chandrababu";
+    static String state="andhra";
+    String district;
+    int n;
+    public void set_dimension(String a,int b)
+    {
+        district =a;
+        n=b;
+    }
+    public void display()
+    {
+    System.out.println("PM:"+common.PM);
+    System.out.println("CM:"+cm);
+    System.out.println("State:"+state);
+    System.out.println("District:"+district);
+    System.out.println("no of population:"+n);
+    }
+}
+class main
+{
+    public static void main(String args[])
+    {
+    tn a1 =new tn();
+    tn a2= new tn();
+    a1.set_dimension("virudhunagar",120000);
+    a2.set_dimension("madurai",10000000);
+    a1.display();
+    a2.display();
+    ap a3=new ap();
+    ap a4= new ap();
+    ap a5=new ap();
+    a3.set_dimension("Kakki nada",120000);
+    a4.set_dimension("Tripathi",2222222);
+    a5.set_dimension("Vijayawada",22222222);
+    a3.display();
+    a4.display();
+    a5.display();
+}
+}
