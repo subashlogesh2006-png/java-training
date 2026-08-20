@@ -1,18 +1,23 @@
-public class mAin
+public class Main
 {
-    public static void main(String[] args)
+    public static void main(String args[])
     {
-        String a="rajuvarma";
-        for(int i=0;i<a.length()-1;i++)
+        String a="aaabbcccbbaaa";
+        int c=1;
+        String y="";
+        for(int i=0;i<a.length();i++)
         {
-            for(int j=i+1;j<a.length();j++)
-            {
-                if(a.charAt(i)==a.charAt(j));
+          if(i+1<a.length() && a.charAt(i)==a.charAt(i+1))
                 {
-                    System.out.println(a.charAt(i));
-                    return;
+                    c++;
                 }
-            }
+                else
+                {
+                    y=y+a.charAt(i);
+                    y=y+(Integer.toString(c));
+                    c=1;
+                }
         }
+        System.out.println(y);
     }
 }
